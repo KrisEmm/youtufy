@@ -4,3 +4,6 @@ services:
     class: ../../controllers/healthChecks/HealthCheckGetController
     arguments: [ ]
 
+  App.Rest.Controllers.YoutubeVideosGetController:
+    class: ../../controllers/youtubeVideos/YoutubeVideosGetController
+    arguments: [ ]
