@@ -10,7 +10,7 @@ export class HealthCheckGetController extends RestController {
         .status(httpStatus.OK)
         .json({
           "app": "youtufy",
-          "service":"admin",
+          "service":"platform",
           "status":"ok"
         });
     } catch (e) {
