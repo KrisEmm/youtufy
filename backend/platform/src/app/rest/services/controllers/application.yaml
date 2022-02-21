@@ -1,0 +1,6 @@
+services:
+
+  App.Rest.Controllers.HealthCheckGetController:
+    class: ../../controllers/healthChecks/HealthCheckGetController
+    arguments: [ ]
+

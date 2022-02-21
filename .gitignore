@@ -1,0 +1,12 @@
+.idea
+.tmp
+
+dist
+./backend/dist/
+
+node_modules
+./backend/node_modules/
+
+
+logs/
+./backend/logs/
