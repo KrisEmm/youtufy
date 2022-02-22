@@ -4,7 +4,7 @@ import { RestController } from 'krisemm/context/shared/infrastructure/express/co
 
 export class HealthCheckGetController extends RestController {
 
-  execute(req: Request, res: Response, next: NextFunction): void {
+  async execute(req: Request, res: Response, next: NextFunction): Promise<void> {
     try {
       res
         .status(httpStatus.OK)
