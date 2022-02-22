@@ -6,4 +6,4 @@ services:
 
   App.Rest.Controllers.YoutubeVideosGetController:
     class: ../../controllers/youtubeVideos/YoutubeVideosGetController
-    arguments: [ ]
+    arguments: [ '@Platform.YoutubeVideos.YoutubeVideosSearcher' ]

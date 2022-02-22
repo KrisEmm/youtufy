@@ -1,3 +1,4 @@
 imports:
   - { resource: ./shared/application.dev.yaml }
+  - { resource: ./modules/youtubeVideos/application.yaml}
   - { resource: ./controllers/application.yaml }
