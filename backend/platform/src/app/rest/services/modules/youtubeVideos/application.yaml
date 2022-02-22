@@ -1,0 +1,13 @@
+services:
+
+  App.Aggregate.AggregateRepository:
+    class: ../../../../../context/shared/infrastructure/persistence/mysql/MySqlAggregateRepository
+    arguments: [ '@App.Shared.EntityManager' ]
+
+  Platform.YoutubeVideos.YoutubeSearcher:
+    class: ../../../../../context/youtubeVideos/infrastructure/GoogleApiYoutubeVideosSearcher
+    arguments: [ ]
+
+  Platform.YoutubeVideos.YoutubeVideosSearcher:
+    class: ../../../../../context/youtubeVideos/application/search/YoutubeVideosSearcher
+    arguments: [ '@Platform.YoutubeVideos.YoutubeSearcher' ]
