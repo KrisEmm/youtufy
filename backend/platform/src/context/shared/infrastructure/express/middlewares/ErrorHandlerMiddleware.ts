@@ -27,7 +27,7 @@ export class ErrorHandlerMiddleware implements ErrorMiddleware {
       req.app.get('exceptionCodeMapping')
     );
 
-    const responseWithError = {
+    const ErrorResponse = {
       error: error.name,
       message: error.message,
       code: statusCodeMapped
@@ -37,7 +37,7 @@ export class ErrorHandlerMiddleware implements ErrorMiddleware {
 
     res
       .status(statusCodeMapped)
-      .json(responseWithError);
+      .json(ErrorResponse);
   }
 
   private getStatusCodeMappedFor(error: Error, errors: Map<string, number>): number {
