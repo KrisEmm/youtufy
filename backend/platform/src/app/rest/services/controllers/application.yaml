@@ -10,4 +10,4 @@ services:
 
   App.Rest.Controllers.VideoToConvertLaterPutController:
     class: ../../controllers/videoToConvertLater/VideoToConvertLaterPutController
-    arguments: [ '' ]
+    arguments: [ '@Platform.VideoToConvertLater.VideoToConvertLaterCreator' ]

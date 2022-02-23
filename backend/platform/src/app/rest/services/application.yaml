@@ -1,4 +1,5 @@
 imports:
   - { resource: ./shared/application.yaml }
   - { resource: ./modules/youtubeVideos/application.yaml}
+  - { resource: ./modules/videoToConvertLater/application.yaml}
   - { resource: ./controllers/application.yaml }
