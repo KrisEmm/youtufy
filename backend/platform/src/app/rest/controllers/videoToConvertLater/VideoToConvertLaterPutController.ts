@@ -1,7 +1,7 @@
 import { NextFunction, Request, Response } from 'express';
 import { RestController } from 'krisemm/context/shared/infrastructure/express/controllers/RestController';
 
-export class VideosToConvertLaterPutController extends RestController {
+export class VideoToConvertLaterPutController extends RestController {
 
   async execute(req: Request, res: Response, next: NextFunction): Promise<void> {
     try {

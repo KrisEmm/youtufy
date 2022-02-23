@@ -2,7 +2,7 @@ import { ApplicationRestApp } from 'krisemm/app/rest/config/ApplicationRestApp';
 import request from 'supertest';
 import {expect} from '@jest/globals';
 
-describe('VideosToConvertLaterPutController',()=>{
+describe('VideoToConvertLaterPutController',()=>{
 
   test('Should add a video to convert later',async ()=>{
 

@@ -8,6 +8,6 @@ services:
     class: ../../controllers/youtubeVideos/YoutubeVideosGetController
     arguments: [ '@Platform.YoutubeVideos.YoutubeVideosSearcher' ]
 
-  App.Rest.Controllers.VideosToConvertLaterPutController:
-    class: ../../controllers/videosToConvertLater/VideosToConvertLaterPutController
+  App.Rest.Controllers.VideoToConvertLaterPutController:
+    class: ../../controllers/videoToConvertLater/VideoToConvertLaterPutController
     arguments: [ '' ]
