@@ -29,7 +29,8 @@ export class ErrorHandlerMiddleware implements ErrorMiddleware {
 
     const responseWithError = {
       error: error.name,
-      message: error.message
+      message: error.message,
+      code: statusCodeMapped
     };
 
     this.logger.error(error);
