@@ -1,0 +1,13 @@
+# Save a video to convert later
+PUT http://localhost:8080/videos/7525563e-8cc4-402e-b124-412a308736f5
+Content-Type: application/json
+
+{
+  "id": "YEq-cvq_cK4",
+  "title": "Luke Bryan - One Margarita (Official Music Video)",
+  "description": "The official music video for Luke Bryan's \"One Margarita\" Everybody here ain't from here But we're here doin' our thing Lettin' go a ...",
+  "thumbnail": "https://i.ytimg.com/vi/YEq-cvq_cK4/hqdefault.jpg",
+  "channel": "LukeBryanVEVO"
+}
+
+###
