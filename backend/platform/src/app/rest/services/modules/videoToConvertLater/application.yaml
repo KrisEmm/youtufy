@@ -1,0 +1,13 @@
+services:
+
+  App.Aggregate.AggregateRepository:
+    class: ../../../../../context/shared/infrastructure/persistence/mysql/MySqlAggregateRepository
+    arguments: [ '@App.Shared.EntityManager' ]
+
+  Platform.VideoToConvertLater.VideoToConvertLaterRepository:
+    class: ../../../../../context/videoToConvertLater/infrastructure/InMemoryVideoToConvertLaterRepository
+    arguments: [ '' ]
+
+  Platform.VideoToConvertLater.VideoToConvertLaterCreator:
+    class: ../../../../../context/videoToConvertLater/application/create/VideoToConvertLaterCreator
+    arguments: [ '@Platform.VideoToConvertLater.VideoToConvertLaterRepository' ]
